@@ -1,0 +1,27 @@
+{
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "jupyter.jupyterServerType": "local",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}",
+        },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}",
+        },
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}",
+        },
+    "python.envFile": "${workspaceFolder}/.env",
+    "autoDocstring.docstringFormat":"sphinx-notypes",
+    "code-runner.runInTerminal": true,
+
+    "python.linting.pylintEnabled": true,
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.banditEnabled": false,
+    "python.linting.pylintArgs": ["--disable=C0111, W0614, C0305, C0200, E0611, R0902", "--extension-pkg-allow-list=pydantic"]
+
+}
