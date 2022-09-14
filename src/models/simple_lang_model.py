@@ -79,14 +79,8 @@ class BaseLM:
         """Proabaility with Additive smoothing
 
         see: https://en.wikipedia.org/wiki/Additive_smoothing
-        where:
-        x - count of word in context
-        N - total
-        d - wocab size
-        a - alpha
 
         """
-        l1 = len(context)
         n_gram = tuple(list(context) + [word])
 
         try:
